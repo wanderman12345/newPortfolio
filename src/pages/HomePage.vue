@@ -1,10 +1,12 @@
 <template>
   <div class="page">
     <div class = "intro">
-      <div class = "greeting">
-          <p class = "n"> Mathew Raju</p>
+      <div class="header-container">
+        <img class="profile-pic" src="../assets/images/self.jpeg" alt="Profile Picture" />
+        <div class = "greeting">
+            <p class = "n"> Mathew Raju</p>
+        </div>
       </div>
-      <p class = "title">Backend Engineer</p>
       <div class = "socials">
           <a
           class="g"
@@ -26,30 +28,26 @@
         >
           <i class="pi pi-linkedin" aria-hidden="true"></i>
         </a>
-        <a
-          class="e"
-          href="https://github.com/wanderman12345"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Email"
-          title="Email"
-        >
-          <i class="pi pi-envelope" aria-hidden="true"></i>
-        </a>
+        <a href="mailto:[mathew2002raj@gmail.com]?subject=Hello from your Portfolio!">
+        <i class="pi pi-envelope"></i>
+      </a>
       </div>
     </div>
     <div class = "body">
       <div class = "curr">
-       Graduate Researcher at the University Of California San Diego
+       Graduate Researcher at the <span class="highlight">University Of California San Diego</span>
        <img class ="triton" src = "../assets/images/triton.png"></img>
       </div>
       <div class = "prev">
-        Obtained my B.S in Computer Engineering at University Of California Santa Cruz
+        Obtained my B.S in <span class="highlight">Computer Engineering</span> at <span class="highlight">University Of California Santa Cruz</span>
        <img class ="sammy" src = "../assets/images/sammy.png"></img>
       </div>
         <div class = "about-me">
-        Currently working as a researcher in the Contextual Robotics Insitute with the goal of how we can use Vision Language models to further improve Task and motion planning for multi agent systems.
-      </div>
+        Wrapped my work as a researcher in the <span class="highlight">Contextual Robotics Insitute</span> with the goal of how we can use <span class="highlight">Vision Language models</span> to further improve <span class="highlight">Task and motion planning</span> for multi agent systems.
+        </div>
+        <div class = "interests">
+         I'm deeply interested in <span class="highlight-bold">embodied AI</span> and building scalable machine learning systems. Currently, I'm expanding my expertise by diving into <span class="highlight-bold">ML compilers</span> and <span class="highlight-bold">on-device AI deployment</span>.
+        </div>
     </div>
   </div>
 </template>
@@ -59,6 +57,9 @@ import Card from 'primevue/card';
 </script>
 
 <style scoped>
+  .interests {
+    margin-top: 4em;
+  }
   .socials {
 
     display: flex;
@@ -87,8 +88,8 @@ import Card from 'primevue/card';
   }
   .body {
     padding: 1.5em;
-    flex-grow: 1; 
-    font-size: 16px;
+    flex-grow: 1;
+    font-size: 19px;
     font-weight: 400;
     display: flex;
     flex-direction: column;
@@ -110,7 +111,7 @@ import Card from 'primevue/card';
     .greeting {
     display: flex;
     align-items: center;
-    gap: 0.5rem;  
+    gap: 0.5rem;
     /* flex-wrap: wrap; */
     }
 
@@ -126,6 +127,31 @@ import Card from 'primevue/card';
       font-size: 3.0em;
       font-weight: 600;
     }
+  }
+
+  .highlight {
+    color: #c4a471; /* Mid-tone golden-beige that contrasts against both white and black */
+    font-weight: 600;
+  }
+
+  .highlight-bold {
+    font-weight: 800; /* Emphasize strictly via font-weight */
+  }
+
+  .profile-pic {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
   }
 </style>
 

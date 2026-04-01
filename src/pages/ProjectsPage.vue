@@ -2,7 +2,7 @@
   <div class="page">
     <div class = "title">
       Projects
-    </div> 
+    </div>
     <div class = "content">
       <card>
       <template #title></template>
@@ -19,8 +19,7 @@
               to best understand trends and features. Due to these
               complexities, we developed a specialized RAG system
 
-              for financial documents, defining FinRAG as an effi-
-              cient means for obtaining financial information.
+              for financial documents, defining FinRAG as an efficient means for obtaining financial information.
             </div>
             </div>
       </div>
@@ -33,7 +32,7 @@
         <img class ="Argo" src = "../assets/images/argoVerse.png"></img>
         <div class = "Argo-stuff">
             <div class = "Argo_title">
-             Argoverse - Trajectory Prediction and Motion Forecasting 
+             Argoverse - Trajectory Prediction and Motion Forecasting
             </div>
             <div class = "Argo_info">
               The deep learning task focuses on predicting the future path of a self-driving car using past movement
@@ -55,7 +54,7 @@ import Card from 'primevue/card';
 
 <style scoped>
 .finRAG_title {
-  font-size: 21px; 
+  font-size: 21px;
   margin-left: 20%;
   font-weight: 500;
 }
@@ -65,7 +64,7 @@ import Card from 'primevue/card';
 }
 
 .Argo_title {
-   font-size: 21px; 
+   font-size: 21px;
   margin-left: 20%;
   font-weight: 500;
 }
