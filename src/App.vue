@@ -4,7 +4,7 @@
       <template #end>
       </template>
     </Menubar>
-    <button 
+    <button
           type = "button"
           class = "themeToggle"
           @click="toggleTheme"
@@ -15,7 +15,7 @@
     <main class="content">
       <router-view />
     </main>
-    
+
 </template>
 
 <script setup>
@@ -31,7 +31,7 @@ const toggleTheme = () => {
 
 const items = [
   {
-  label: 'home',
+  label: 'Home',
   icon: 'pi pi-home',
   command: () => router.push('/')
   },
@@ -71,7 +71,7 @@ header {
   background: transparent;
   border: 0;
   padding: 0;
-  color: inherit; 
+  color: inherit;
   cursor: pointer;
 }
 
@@ -81,7 +81,7 @@ header {
 }
 
 .nav a {
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 .logo {

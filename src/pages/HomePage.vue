@@ -39,7 +39,7 @@
        <img class ="triton" src = "../assets/images/triton.png"></img>
       </div>
       <div class = "prev">
-        Obtained my B.S in <span class="highlight">Computer Engineering</span> at <span class="highlight">University Of California Santa Cruz</span>
+        Obtained my B.S in <span class="highlight-bold">Computer Engineering</span> at <span class="highlight">University Of California Santa Cruz</span>
        <img class ="sammy" src = "../assets/images/sammy.png"></img>
       </div>
         <div class = "about-me">
