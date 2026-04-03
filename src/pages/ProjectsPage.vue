@@ -122,4 +122,47 @@ import Card from 'primevue/card';
   font-size: 39px;
   font-weight: 500;
 }
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .page {
+    padding: 2em;
+  }
+  .finRAG, .Argo {
+    width: 20em;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .page {
+    padding: 1.5em;
+  }
+  .title {
+    margin-top: 0;
+    text-align: center;
+    font-size: 32px;
+  }
+  .FinRAG_content, .Argo_content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .finRAG, .Argo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  .FINrag-stuff, .Argo-stuff {
+    margin-left: 0;
+    margin-top: 2em;
+    text-align: center;
+  }
+  .finRAG_title, .Argo_title {
+    margin-left: 0;
+    font-size: 1.2em;
+  }
+  .finRAG_info, .Argo_info {
+    margin-top: 1em;
+  }
+}
 </style>

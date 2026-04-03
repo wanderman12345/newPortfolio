@@ -95,5 +95,21 @@ header {
   gap: 0.5rem;
 }
 
+@media (max-width: 768px) {
+  .topbar {
+    z-index: 1000;
+    margin-right: 0;
+    background-color: var(--color-background);
+  }
+
+  /* Target the list container so it expands to the full width of the screen 
+     rather than squishing into the flex layout */
+  :deep(.p-menubar .p-menubar-root-list) {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+}
 
 </style>

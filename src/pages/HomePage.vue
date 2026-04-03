@@ -153,5 +153,61 @@ import Card from 'primevue/card';
     align-items: center;
     width: max-content;
   }
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    .page {
+      padding: 4em;
+      gap: 2rem;
+    }
+    .intro {
+      flex: 0 0 350px;
+    }
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    .page {
+      flex-direction: column;
+      padding: 2em 1em;
+      gap: 2rem;
+    }
+    .intro {
+      flex: 1;
+      align-items: center;
+      text-align: center;
+    }
+    .intro .greeting {
+      justify-content: center;
+    }
+    .header-container {
+      width: 100%;
+    }
+    .profile-pic {
+      width: 160px;
+      height: 160px;
+      margin-bottom: 1.5rem;
+    }
+    .socials {
+      margin-left: 0;
+      margin-top: 1.5em;
+      width: 12em;
+      justify-content: space-around;
+    }
+    .body {
+      padding: 1em 0;
+      text-align: center;
+    }
+    .interests, .about-me {
+      margin-top: 2em;
+    }
+    .n {
+      font-size: 2.2em !important;
+    }
+  }
 </style>
 

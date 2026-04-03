@@ -88,6 +88,38 @@ const events = ref([
 .page {
   margin-top: 1%;
 }
+
+/* Mobile */
+@media (max-width: 768px) {
+  .page {
+    margin-top: 7em;
+  }
+  .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    gap: 1rem;
+  }
+  .timeline-image {
+    width: 70px;
+  }
+  :deep(.p-card-title) {
+    font-size: 1rem;
+  }
+  :deep(.p-card-subtitle) {
+    font-size: 0.8rem;
+  }
+  .info-list {
+    display: none;
+  }
+  :deep(.p-card-content) {
+    padding: 0;
+  }
+  :deep(.p-timeline-event-content) {
+    padding: 0 0 1rem 1rem;
+  }
+}
 </style>
 
 
